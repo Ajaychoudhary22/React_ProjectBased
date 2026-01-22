@@ -1,9 +1,4 @@
 
-
-
-
-
-Hooks
 // import React, { useState } from 'react'
 
 // const App = () => {
@@ -75,29 +70,25 @@ Hooks
 
 import React, { useState } from 'react'
 
+import CreateTodo from './components/createTodo';
+import ReadTodo from './components/ReadTodo';
+
 const App = () => {
    const [todos, setTodos] = useState([
     { id: 1, title: 'Learn React' , iscompleted: false},
    ]);
-   const [title, setTitle] = useState('');
-   const [city, setCity] = useState('');
+  
+    
 
   return (
-    <div>
-      <h1>Todo List</h1>
-      <input onChange={(e) => setTitle(e.target.value )} type="text" value={title} placeholder='enter task' />
-      <br />
-      <input type="checkbox"   />completed 
-      <br />
+<div>
+<CreateTodo todos={todos} setTodos={setTodos}/>
+<ReadTodo todos={todos} setTodos={setTodos}/>
+</div>
+   );
+};
 
-      <select onChange={(e) => setCity(e.target.value)} value={city} >
-        <option value="mumbai">mumbai</option>
-        <option value="pune">pune</option>
-        <option value="nagpur">nagpur</option>
-      </select>
-      <button >Add Todo</button>
-    </div>
-  )
-}
+
+ 
 
 export default App
