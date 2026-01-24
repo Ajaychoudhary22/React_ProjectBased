@@ -26,15 +26,15 @@ const createTodo = (props) => {
     
 
   return (
-    <div>
+    <>
         <form onSubmit={handlesubmit }>
-      <input onChange={(e) => setTitle(e.target.value )} type="text" value={title} placeholder='enter task' />
+      <input className='border border-gray-300 rounded px-4 py-2 mr-2' onChange={(e) => setTitle(e.target.value )} type="text" value={title} placeholder='enter task' />
       <br />
-    
-      <button  >Add Todo</button>
-     
+
+      <button className='bg-blue-500 text-white px-4 py-2 rounded'  >Add Todo</button>
+
       </form>
-    </div>
+    </>
   )
 }
 

@@ -69,26 +69,23 @@
 //TODO LIST APP
 
 import React, { useState } from 'react'
-
-import CreateTodo from './components/createTodo';
-import ReadTodo from './components/ReadTodo';
+import CreateTodo from './components/createTodo'
+import ReadTodo from './components/ReadTodo'
 
 const App = () => {
-   const [todos, setTodos] = useState([
-    { id: 1, title: 'Learn React' , iscompleted: false},
-   ]);
+  const [todos, setTodos] = useState([
+      {id:1, title:"learn react", iscompleted:false},
+  ]);
+
+   return (
+    <>
+      <CreateTodo  todos={todos} setTodos={setTodos} />
+      <ReadTodo todos={todos} setTodos={setTodos} />
+
+    </>
+  )
+}
+
   
-    
-
-  return (
-<div>
-<CreateTodo todos={todos} setTodos={setTodos}/>
-<ReadTodo todos={todos} setTodos={setTodos}/>
-</div>
-   );
-};
-
-
- 
 
 export default App

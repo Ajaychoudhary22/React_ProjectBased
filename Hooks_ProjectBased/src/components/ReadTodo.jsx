@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import styles from './Read.module.css';
 
 const ReadTodo = (props) => {
     const {todos, setTodos} = props;
@@ -24,16 +25,15 @@ const deleteTodo = (id) => {
   return (
     <div>
           
-      <h1>Todo List</h1>
+      <h1 className={styles.read_list_heading}>Todo List</h1>
     
       <hr />
-      <ul>{renderTodos()}</ul>
-
-   
-  
-    
+      <ol>{renderTodos()}</ol>
     </div>
   )
 }
 
 export default ReadTodo
+
+
+ 

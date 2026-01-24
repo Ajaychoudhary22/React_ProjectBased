@@ -1,0 +1,22 @@
+jab bhi ham kisis css ko use krte hai to too mailny ham 3 type use krte h inline css internal css and external css 
+
+.read_list_heading{
+    color:balck
+}
+
+is method ko hambolte h 
+{BEM}--> BLOCK ELEMENT MODIFERIS 
+
+ISME PHELE BLOCK KAAN NAAM REHTA  hai fir element fir ham kispe laga rhe hai voo hota hai 
+
+// module css atti 
+
+uski ek folder banao module css naam se 
+
+import style(yaa kuch bhi naam dedo ) from ./read_module_css
+
+ese import kr sakte hai 
+
+fir use krne ke liye ham 
+kisi bhi file mein jakar {style ese import kr skate hai 
+}
